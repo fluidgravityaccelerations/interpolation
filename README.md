@@ -54,7 +54,7 @@ $$\alpha = \frac{\xi - x_i}{h} \quad \alpha \in [0,1]$$
 
 Then the interpolated value is:
 
-$$f(\xi) \approx (1 - \alpha)y_i + \alpha\,y_{i+1}$$
+$$f(\xi) \approx (1 - \alpha)y_i + \alpha y_{i+1}$$
 
 This produces a **piecewise linear approximation**.
 
