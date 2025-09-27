@@ -1,12 +1,11 @@
-# 1D Interpolation in MATLAB
+# Interpolation
 
-This repository provides simple **vectorized implementations** of two interpolation methods for uniformly spaced samples in MATLAB:
+This repository provides implementations of the following interpolation methods:
 
-- **Nearest Neighbor Interpolation**
-- **Linear Interpolation**
+- **Nearest Neighbor** (in Matlab and Python)
+- **Linear** (in Matlab and Python)
 
-Both functions are designed to mimic MATLAB's built-in `interp1` function (with options `'nearest'` and `'linear'`) but implemented explicitly for educational purposes.  
-The goal is clarity and compactness.
+The codes are designed for educational purposes only. 
 
 ---
 
@@ -14,9 +13,9 @@ The goal is clarity and compactness.
 
 Given:
 - A set of uniformly spaced sample points:
-  \[
-  x = \{x_1, x_2, \dots, x_N\}, \quad x_i = x_1 + (i-1)h, \quad h = x_{i+1} - x_i
-  \]
+  
+  $$x = \{x_1, x_2, \dots, x_N\}, \quad x_i = x_1 + (i-1)h, \quad h = x_{i+1} - x_i$$
+  
 - Corresponding sample values:
   \[
   y = \{y_1, y_2, \dots, y_N\}, \quad y_i = f(x_i)
