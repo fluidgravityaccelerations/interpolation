@@ -24,9 +24,7 @@ Given:
 
   $$\xi = \{\xi_1, \xi_2, \dots, \xi_M\}$$,
 
-we want to estimate the function values 
-
-  $$f(\xi_j)$$.
+we want to estimate the function values $f(\xi_j)$.
 
 ---
 
