@@ -30,17 +30,13 @@ we want to estimate the function values $f(\xi_j)$.
 
 ### 🔹 Nearest Neighbor Interpolation
 
-For each query point \( \xi \), find the nearest sample index:
+For each query point $\xi$, find the nearest sample index:
 
-\[
-i = \text{round}\!\left(\frac{\xi - x_1}{h}\right) + 1
-\]
+$$i = \text{round}\!\left(\frac{\xi - x_1}{h}\right) + 1$$
 
 The interpolated value is:
 
-\[
-f(\xi) \approx y_i
-\]
+$$f(\xi) \approx y_i$$
 
 This method produces a **piecewise constant approximation**.
 
