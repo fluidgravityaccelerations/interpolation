@@ -44,35 +44,19 @@ This method produces a **piecewise constant approximation**.
 
 ### 🔹 Linear Interpolation
 
-# Interpolation
-
-For each query point \( \xi \), find the nearest left neighbor:
+For each query point $\xi$, find the nearest left neighbor:
 
 $$i = \left\lfloor \frac{\xi - x_1}{h} \right\rfloor + 1$$
 
 Define the local interpolation weight:
 
-\[
-\alpha = \frac{\xi - x_i}{h}, \quad \alpha \in [0,1]
-\]
+$$\alpha = \frac{\xi - x_i}{h}, \quad \alpha \in [0,1]$$
 
 Then the interpolated value is:
 
-\[
-f(\xi) \approx (1 - \alpha)\,y_i + \alpha\,y_{i+1}
-\]
+$$f(\xi) \approx (1 - \alpha)\,y_i + \alpha\,y_{i+1}$$
 
 This produces a **piecewise linear approximation**.
 
 ---
 
-## 📄 Functions
-
-### `nearestNeighborInterpolation1D.m`
-```matlab
-function yi = nearestNeighborInterpolation1D(x, y, xi)
-    h   = x(2) - x(1);                        % uniform spacing
-    idx = round((xi - x(1)) / h) + 1;         % nearest index
-    idx = min(max(idx, 1), numel(x));         % clamp to [1, numel(x)]
-    yi  = y(idx);                             % direct lookup
-end
