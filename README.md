@@ -2,8 +2,8 @@
 
 This repository provides implementations of the following interpolation methods:
 
-- **Nearest Neighbor** (in Matlab and Python)
-- **Linear** (in Matlab and Python)
+- **1D Nearest Neighbor** (in Matlab and Python)
+- **1D Linear** (in Matlab and Python)
 
 The codes are designed for educational purposes only. 
 
