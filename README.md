@@ -12,17 +12,21 @@ The codes are designed for educational purposes only.
 ## 📐 Mathematical Background
 
 Given:
-- A set of uniformly spaced sample points:
+- a set of uniformly spaced sample points:
   
   $$x = \{x_1, x_2, \dots, x_N\}, \quad x_i = x_1 + (i-1)h, \quad h = x_{i+1} - x_i$$
   
-- Corresponding sample values:
-  \[
-  y = \{y_1, y_2, \dots, y_N\}, \quad y_i = f(x_i)
-  \]
-- A set of query points \( \xi = \{\xi_1, \xi_2, \dots, \xi_M\} \).
+- corresponding sample values:
+  
+  $$y = \{y_1, y_2, \dots, y_N\}, \quad y_i = f(x_i)$$
 
-We want to estimate the function values \( f(\xi_j) \).
+- a set of query points
+
+  $$\xi = \{\xi_1, \xi_2, \dots, \xi_M\}$$,
+
+we want to estimate the function values 
+
+  $$f(\xi_j)$$.
 
 ---
 
