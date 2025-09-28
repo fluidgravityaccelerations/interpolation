@@ -61,3 +61,22 @@ This produces a **piecewise linear approximation**.
 
 ---
 
+### 🔹 Lagrange Polynomial Interpolation
+
+The interpolant is defined as the unique polynomial of degree at most $N-1$ that passes through all sample points:
+
+$$
+P(x) = \sum_{i=1}^N y_i \, L_i(x),
+$$
+
+where $L_i(x)$ are the **Lagrange basis polynomials**:
+
+$$
+L_i(x) = \prod_{\substack{j=1 \\ j \neq i}}^N \frac{x - x_j}{x_i - x_j}.
+$$
+
+Thus, $P(x_j) = y_j$ exactly.
+
+While Lagrange interpolation is mathematically exact for polynomials up to degree $N-1$, **numerical instability** may occur for oscillatory functions. The examples provided include a case where interpolation of $\sin(5x)$ with $50$ nodes produces oscillations and artifacts, highlighting this instability.
+
+---
