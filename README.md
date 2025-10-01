@@ -63,7 +63,7 @@ $$f(\xi) \approx (1 - \alpha)y_i + \alpha y_{i+1}$$
 The interpolant is defined as the unique polynomial of degree at most $N-1$ that passes through all sample points:
 
 $$
-P(x) = \sum_{i=1}^N y_i \, L_i(x),
+P(x) = \sum_{i=1}^N y_i L_i(x),
 $$
 
 where $L_i(x)$ are the **Lagrange basis polynomials**:
