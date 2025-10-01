@@ -69,7 +69,7 @@ $$
 where $L_i(x)$ are the **Lagrange basis polynomials**:
 
 $$
-L_i(x) = \prod_{\substack{j=1 \\ j \neq i}}^N \frac{x - x_j}{x_i - x_j}.
+L_i(x) = \prod_{\substack{j=1, j \neq i}}^N \frac{x - x_j}{x_i - x_j}.
 $$
 
 Thus, $P(x_j) = y_j$ exactly.
