@@ -22,7 +22,7 @@ Given:
   
   $$y = \{y_1, y_2, \dots, y_N\}, \quad y_i = f(x_i)$$
 
-- a set of query points
+- a set of interpolation points
 
   $$\xi = \{\xi_1, \xi_2, \dots, \xi_M\}$$,
 
@@ -32,7 +32,7 @@ we want to estimate the function values $f(\xi_j)$.
 
 ### 🔹 Nearest Neighbor Interpolation
 
-For each query point $\xi$, find the nearest sample index:
+For each interpolation point $\xi$, find the nearest sample index:
 
 $$i = \text{round}\left(\frac{\xi - x_1}{h}\right) + 1$$
 
