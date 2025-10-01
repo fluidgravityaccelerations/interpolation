@@ -30,7 +30,7 @@ we want to estimate the function values $f(\xi_j)$.
 
 ---
 
-### 🔹 Nearest Neighbor Interpolation
+### 🔹 Nearest Neighbor Interpolation (Piecewise Constant Approximation)
 
 For each interpolation point $\xi$, find the nearest sample index:
 
@@ -40,11 +40,9 @@ The interpolated value is:
 
 $$f(\xi) \approx y_i$$
 
-This method produces a **piecewise constant approximation**.
-
 ---
 
-### 🔹 Linear Interpolation
+### 🔹 Linear Interpolation (Piecewise Linear Approximation)
 
 For each query point $\xi$, find the nearest left neighbor:
 
@@ -57,8 +55,6 @@ $$\alpha = \frac{\xi - x_i}{h} \quad \alpha \in [0,1]$$
 Then the interpolated value is:
 
 $$f(\xi) \approx (1 - \alpha)y_i + \alpha y_{i+1}$$
-
-This produces a **piecewise linear approximation**.
 
 ---
 
