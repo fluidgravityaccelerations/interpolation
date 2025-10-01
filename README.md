@@ -14,9 +14,9 @@ The codes are designed for educational purposes only.
 ## 📐 Mathematical Background
 
 Given:
-- a set of uniformly spaced sample points:
+- a set of uniformly spaced sample points over the sampling interval $(a,b):
   
-  $$x = \{x_1, x_2, \dots, x_N\}, \quad x_i = x_1 + (i-1)h, \quad i=1,\ldots,N, \quad h = x_{i+1} - x_i$$
+  $$x = \{a=x_1, x_2, \dots, b=x_N\}, \quad x_i = x_1 + (i-1)h, \quad i=1,\ldots,N, \quad h = x_{i+1} - x_i$$
   
 - corresponding sample values:
   
@@ -87,7 +87,7 @@ Cubic spline interpolation constructs a smooth function $g(x)$ that satisfies th
   $$g(x) = a_k + b_k(x-x_{k-1}) + c_k(x-x_{k-1})^2 + d_k(x-x_{k-1})^3.$$
 
 - $g(x)$ interpolates the data:  
-  $$g(x_k) = y_k, \quad k = 0, 1, \dots, N.$$
+  $$g(x_k) = y_k, \quad k = 1, 2, \dots, N.$$
 
 - $g(x)$ has continuous first and second derivatives:  
   $$g(x) \in C^{2}(a, b).$$
