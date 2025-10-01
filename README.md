@@ -99,25 +99,6 @@ This ensures a smooth and stable approximation that avoids the oscillatory artif
 
 ---
 
-### 🔹 Cubic Spline Interpolation
-
-Cubic spline interpolation constructs a smooth function $g(x)$ that satisfies:
-
-- $g(x)$ is a **piecewise cubic polynomial**:  
-  On each interval $(x_{k-1}, x_k)$,  
-  $$g(x) = a_k + b_k(x-x_{k-1}) + c_k(x-x_{k-1})^2 + d_k(x-x_{k-1})^3.$$
-
-- $g(x)$ interpolates the data:  
-  $$g(x_k) = y_k, \quad k = 0, 1, \dots, N.$$
-
-- $g(x)$ has continuous first and second derivatives:  
-  $$g(x) \in C^{2}(a, b).$$
-
-- **Natural boundary conditions** are imposed:  
-  $$g''(a) = g''(b) = 0.$$
-
----
-
 #### Computation of coefficients
 
 To compute the spline coefficients, the **second derivatives at the knots** are first determined.  
