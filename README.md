@@ -1,9 +1,9 @@
 # Interpolation
 
-This repository provides implementations of the following interpolation methods:
+Implementations of the following interpolation methods:
 
-- **1D Nearest Neighbor** (in Matlab and Python)
-- **1D Linear** (in Matlab and Python)
+- **1D Nearest Neighbor Interpolation** (in Matlab and Python)
+- **1D Linear Interpolation** (in Matlab and Python)
 - **1D Lagrange Interpolation** (in Matlab and Python)
 - **1D Cubic Spline Interpolation** (in Matlab and Python)
 
