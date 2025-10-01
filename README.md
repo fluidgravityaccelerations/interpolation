@@ -16,7 +16,7 @@ The codes are designed for educational purposes only.
 Given:
 - a set of uniformly spaced sample points:
   
-  $$x = \{x_1, x_2, \dots, x_N\}, \quad x_i = x_1 + (i-1)h, \quad h = x_{i+1} - x_i$$
+  $$x = \{x_1, x_2, \dots, x_N\}, \quad x_i = x_1 + (i-1)h, \quad i=1,\ldots,N, \quad h = x_{i+1} - x_i$$
   
 - corresponding sample values:
   
