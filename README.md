@@ -97,7 +97,7 @@ Cubic spline interpolation constructs a smooth function $g(x)$ that satisfies th
 
 This ensures a smooth and stable approximation that avoids the oscillatory artifacts often seen in high-degree polynomial interpolation.
 
----
+--
 
 #### Computation of coefficients
 
