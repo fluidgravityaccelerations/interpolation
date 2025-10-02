@@ -108,7 +108,7 @@ $$
 A \mathbf{m} = \mathbf{b},
 $$
 
-where $\mathbf{m} = \{g''(x_1), \dots, g''(x_{N-1})\}$ are the unknown second derivatives at interior points.  
+where $\mathbf{m} = \{g''(x_2), \dots, g''(x_{N-1})\}$ are the unknown second derivatives at interior points.  
 The matrix $A$ is tridiagonal because each spline segment only couples with its immediate neighbors.  
 
 Once $\mathbf{m}$ is obtained, the coefficients are computed as:
